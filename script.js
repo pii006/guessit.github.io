@@ -267,9 +267,9 @@ function handleGuess() {
 // Handle tebakan kata
 function handleWordGuess(guess) {
     if (guess.length !== gameState.currentWord.length) {
-        showAlert(`Tebakan harus ${gameState.currentWord.} huruf!`, "warning");
-        return;
-    }
+    showAlert(`Tebakan harus ${gameState.currentWord.length} huruf!`, "warning");
+    return;
+}
     
     if (guess === gameState.currentWord) {
         // Tebakan benar
